@@ -1,0 +1,14 @@
+﻿USE [first_db]
+GO
+
+DECLARE	@return_value Int
+
+EXEC	@return_value = [dbo].[IUDname]
+		@op = 1,
+		@id = 2,
+		@Firstname = N'sonu',
+		@Lastname = N'verma'
+
+SELECT	@return_value as 'Return Value'
+
+GO
